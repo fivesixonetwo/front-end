@@ -61,3 +61,23 @@ categoryItems.forEach((item, index) => {
 });
 
 
+// Get the modal
+const modal = document.getElementById("modal__container");
+
+// When the user clicks the button, open the modal 
+$(".btn__globe-modal").onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+$(".modal--close").onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+

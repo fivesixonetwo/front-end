@@ -44,7 +44,8 @@
                                 <div class="header__searchbar-item header__searchbar-location">
                                     <div>Location</div>
                                     <div class="header__searchbar-location--input ">
-                                        <input type="text" placeholder="Where are you going?" name="" id="" class="input">
+                                        <input type="text" placeholder="Where are you going?" name="" id=""
+                                            class="input">
                                     </div>
                                 </div>
                                 <div class="header__searchbar-checkin">
@@ -72,7 +73,7 @@
                     <div class="wrap__header-navbar-list">
                         <ul class="header__navbar-list">
                             <li class="header__navbar-item-host"><a href="#">Become a host</a></li>
-                            <li class="header__navbar-item-host">
+                            <li class="header__navbar-item-host btn__globe-modal">
                                 <i class="header__navbar-globe fas fa-globe"></i>
                             </li>
                             <li class="header__navbar-item-profile">
@@ -103,6 +104,265 @@
         </header>
     </div>
 
+    <!-- Modal language -->
+    
+    <div id="modal__container" class="modal__container">
+        <div class="modal__close">
+            <span class="modal--close">&times;</span>
+        </div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <div class="header__category">
+                    <div class="header__language header__category--active">
+                        <span>Language and region</span>
+                    </div>
+                    <div class="header__currency">
+                        <span>Currency</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__body">
+                <div class="modal__language modal__body--active">
+                    <div class="modal__suggest">
+                        <h2>Suggested language and region</h2>
+                        <div class="row  suggest__list">
+                            <div class="col c-2 suggest__item">
+                                <span>Tiếng Việt</span>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="col c-2 suggest__item">
+                                <span>Русский</span>
+                                <span>Россия</span>
+                            </div>
+                            <div class="col c-2 suggest__item">
+                                <span>Tiếng Việt</span>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="col c-2 suggest__item">
+                                <span>Русский</span>
+                                <span>Россия</span>
+                            </div>
+                            <div class="col c-2 suggest__item">
+                                <span>Русский</span>
+                                <span>Россия</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__languages">
+                        <h2>Choose a language and region</h2>
+                        <div class="row language__list">
+                            <div class="col c-2 language__item  item--active">
+                                <span>English</span>
+                                <span>United States</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Bahasa Indonesia</span>
+                                <span>Indonesia</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Tiếng Việt</span>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Русский</span>
+                                <span>Россия</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Tiếng Việt</span>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Tiếng Việt</span>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Русский</span>
+                                <span>Россия</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Русский</span>
+                                <span>Россия</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Bahasa Indonesia</span>
+                                <span>Indonesia</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Tiếng Việt</span>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Русский</span>
+                                <span>Россия</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Tiếng Việt</span>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Tiếng Việt</span>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Русский</span>
+                                <span>Россия</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Русский</span>
+                                <span>Россия</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Tiếng Việt</span>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Русский</span>
+                                <span>Россия</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Tiếng Việt</span>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Tiếng Việt</span>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Русский</span>
+                                <span>Россия</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Русский</span>
+                                <span>Россия</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Bahasa Indonesia</span>
+                                <span>Indonesia</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Tiếng Việt</span>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Русский</span>
+                                <span>Россия</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Tiếng Việt</span>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Tiếng Việt</span>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Русский</span>
+                                <span>Россия</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Русский</span>
+                                <span>Россия</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Tiếng Việt</span>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Русский</span>
+                                <span>Россия</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Tiếng Việt</span>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Tiếng Việt</span>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Русский</span>
+                                <span>Россия</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Русский</span>
+                                <span>Россия</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Bahasa Indonesia</span>
+                                <span>Indonesia</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Tiếng Việt</span>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Русский</span>
+                                <span>Россия</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Tiếng Việt</span>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Tiếng Việt</span>
+                                <span>Việt Nam</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Русский</span>
+                                <span>Россия</span>
+                            </div>
+                            <div class="col c-2 language__item">
+                                <span>Русский</span>
+                                <span>Россия</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal__currency">
+                    <h2>Choose a currency</h2>
+                    <div class="row currency__list">
+                        <div class="col c-2 currency__item item--active">
+                            <span>United States dollar</span>
+                            <span>USD - $</span>
+                        </div>
+                        <div class="col c-2 currency__item">
+                            <span>Chinese yuan</span>
+                            <span>CNY - ￥</span>
+                        </div>
+                        <div class="col c-2 currency__item">
+                            <span>Bulgarian lev</span>
+                            <span>BGN - лв.</span>
+                        </div>
+                        <div class="col c-2 currency__item">
+                            <span>United States dollar</span>
+                            <span>USD - $</span>
+                        </div>
+                        <div class="col c-2 currency__item">
+                            <span>Chinese yuan</span>
+                            <span>CNY - ￥</span>
+                        </div>
+                        <div class="col c-2 currency__item">
+                            <span>Bulgarian lev</span>
+                            <span>BGN - лв.</span>
+                        </div>
+                        <div class="col c-2 currency__item">
+                            <span>United States dollar</span>
+                            <span>USD - $</span>
+                        </div>
+                        <div class="col c-2 currency__item">
+                            <span>Chinese yuan</span>
+                            <span>CNY - ￥</span>
+                        </div>
+                        <div class="col c-2 currency__item">
+                            <span>Bulgarian lev</span>
+                            <span>BGN - лв.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="grid wide container">
 
         <section class="container_nearby">
@@ -112,7 +372,7 @@
                     <div class="col c-3 nearby_item">
                         <a href="#" class="nearby_link">
                             <span>
-                                <img src="./assets/img/nearby-hcm.jpg" alt="Ho Chi Minh picture">
+                                <img src="./assets/img/hcm.jpg" alt="Ho Chi Minh picture">
                             </span>
                             <span>
                                 <b>Ho Chi Minh City</b>

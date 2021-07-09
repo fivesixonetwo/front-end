@@ -772,3 +772,159 @@ input[type=text] {
 .footernav_social > ul > li:not(:last-child) { 
     margin-right: 24px;
 }
+
+/* Modal language */
+.modal__container {
+    width: 100%;
+    display: none; 
+    position: fixed; 
+    z-index: 100; 
+    left: 0;
+    top: 0; 
+    height: 100%; 
+    overflow: hidden; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+    /* -webkit-animation-name: fadeIn; 
+    -webkit-animation-duration: 0.6s;
+    animation-name: fadeIn;
+    animation-duration: 0.6s */
+}
+
+.modal__close {
+    z-index: 999;
+    padding: 32px 32px;
+    max-width: 1032px;
+    height: 5px;
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn2;
+    -webkit-animation-duration: 0.6s;
+    animation-name: slideIn2;
+    animation-duration: 0.6s;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.modal--close {
+    font-size: 2.8rem !important;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.modal__content {
+    margin-top: 16px;
+    z-index: 200;
+    overflow: auto;
+    padding: 24px 32px;
+    padding-top: 32px;
+    max-width: 1032px;
+    height: 100%;
+    max-height: 80vh;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.6s;
+    animation-name: slideIn;
+    animation-duration: 0.6s;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.modal__content h2 {
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+}
+
+.modal__content span {
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.header__category {
+    display: flex;
+   
+    margin-bottom: 50px;
+}
+
+.header__currency > span,
+.header__language > span {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: #AFAFAF;
+}
+
+
+.header__currency {
+    margin-left: 30px;
+}
+
+.suggest__list,
+.currency__list,
+.language__list {
+    margin-top: 16px;
+    margin-bottom: 50px;
+    margin-left: -16px;
+    margin-right: 0px;
+}
+
+.suggest__item,
+.language__item,
+.currency__item {
+    display: flex;
+    flex-direction: column;
+    padding: 9px 12px;
+    margin-left: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.suggest__item > span:nth-child(2),
+.language__item > span:nth-child(2),
+.currency__item > span:nth-child(2) {
+    color: var(--textcolor-color);
+    font-weight: 300;
+}
+
+.suggest__item:hover,
+.language__item:hover,
+.currency__item:hover {
+    cursor: pointer;
+    background-color: var(--modalhover-color);
+    border-radius: 8px;
+}
+
+.modal__language,
+.modal__currency {
+    display: none;
+}
+
+.currency__item.item--active,
+.language__item.item--active,
+.suggest__item.item--active {
+    border-radius: 8px;
+    border: 1px solid var(--black-color);
+}
+
+.modal__language.modal__body--active,
+.modal__currency.modal__body--active {
+    display: block;
+}
+
+.header__language.header__category--active > span,
+.header__currency.header__category--active > span{
+    color: var(--black-color);
+    text-decoration: underline;
+}
