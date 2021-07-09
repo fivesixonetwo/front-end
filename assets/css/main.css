@@ -4,7 +4,7 @@
 
 /* Header */
 .header-app {
-    background-image: url('/airbnb/assets/img/12345.jpg');
+    background-image: url('../img/12345.jpg');
     width: 100%;
     height: var(--headerimg-height);
     background-repeat: no-repeat;
