@@ -22,7 +22,6 @@ window.addEventListener("click", async function (event) {
 
 searchbarItems.forEach((element) => {
     element.onclick = function () {
-        console.log("a1")
         this.children[1].onclick = function () {
             isInput = true;
         }
@@ -88,10 +87,15 @@ $(".modal--close").onclick = function () {
 }
 
 // When the user clicks anywhere outside of the modal, close it
+
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
         $("body").style.overflow = "auto";
+    }
+
+    if(event.target !== $(".header__navbar-item-profile")) {
+        profile.style.display = "none";
     }
 }
 
@@ -115,4 +119,18 @@ $$(".footernav_link")[1].onclick = () => {
     removeActive();
     $$(".header__category-item")[1].classList.add("header__category--active");
     $$(".modal__body-item")[1].classList.add("modal__body--active");
+}
+
+// Profile
+const profile = document.getElementById("header__navbar-control");
+
+$(".header__navbar-item-profile").onclick = function() {
+    let a = document.getElementById("header__navbar-control");
+    if(a.style.display === "" || a.style.display === "none"){
+        a.style.display = "block";
+    }
+    else
+    {
+        a.style.display = "none";
+    }
 }

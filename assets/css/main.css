@@ -258,7 +258,7 @@ input[type=text] {
 
 .header__navbar-icon {
     font-size: 1.6rem;
-    color: #ccc;
+    color: var(--black-color);
 }
 
 
@@ -266,11 +266,21 @@ input[type=text] {
 }
 
 .header__navbar-item-profile {
-
+    position: relative;
 }
 
 .header__navbar-item-profile:hover {
     cursor: pointer;
+}
+
+.header__navbar-item-profile::before {
+    z-index: 99999;
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
 }
 
 .header__navbar-profile {
@@ -291,6 +301,47 @@ input[type=text] {
 
 .header__navbar-profile > div {
 
+}
+
+.header__navbar-control {
+    display: none;
+    margin-top: 16px;
+    position: absolute;
+    right: 0;
+    width: var(--profile-size);
+    padding: 8px 0;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.header__navbar-author {
+    border-bottom: 1px solid var(--line-color);
+}
+
+.header__navbar-control--bold {
+    font-weight: 500;
+}
+
+.header__navbar-control > div > div{
+    padding: 10px 16px;
+}
+
+.header__navbar-author > div:nth-child(2) {
+    margin-bottom: 8px;
+}
+
+.header__navbar-control > div > div:hover {
+    background-color: #EBEBEB;
+    cursor: pointer;
+}
+
+.header__navbar-host--control {
+    margin-top: 8px;
 }
 
 /* Flexible button */
@@ -624,7 +675,7 @@ input[type=text] {
 
 .category_line--down {
     height: 1px;
-    background-color: rgb(221, 221, 221);
+    background-color: var(--line-color);
 }
 
 .category_item--active {
@@ -634,7 +685,7 @@ input[type=text] {
     margin-top: 48px;
     padding: 48px 0px 24px;
     background-color: #F7F7F7;
-    border-top: 1px solid #a59999;
+    border-top: 1px solid var(--line-color);
 }
 
 .footer h2{
